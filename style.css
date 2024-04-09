@@ -1,4 +1,103 @@
-*{
-    padding:0;
-    margin:0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    
+}
+#Gear{
+    color: red;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #9d9999; 
+    color: #fff;
+    padding: 20px 0;
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Align items vertically */
+    z-index: 2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Use flexbox to align items */
+
+}
+nav ul h1{
+    position:relative;
+    top:5px;
+}
+nav ul li {
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    position:relative;
+    left:160px;
+    top:9px;
+}
+nav ul li a:hover{
+    color:red;
+}
+nav button {
+    background-color: #b82222;
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position:relative;
+    left:180px;
+}
+
+nav button:hover {
+    background-color:red; 
+    color: #000000;
+}
+#menu {
+    background-color: #808080; /* Example background color */
+    padding: 50px 0; /* Add some vertical padding */
+}
+
+.wide-section {
+    width: 100%; /* Set a custom width for the section */
+    margin: 0 auto;/* Center the section horizontally */
+    height: 654px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+
+.container {
+    text-align: center; /* Center the content inside the container */
+}
+
+
+#menu p {
+    font-size: 80px;
+}
+
+#menu button {
+    font-size:20px;
+    background-color: #b82222;
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#menu button:hover{
+    background-color:red; 
+    color: #000000;
 }
