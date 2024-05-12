@@ -332,7 +332,7 @@ button[type="submit"]:hover {
 
 
 @media only screen and (max-width: 768px) {
-    /* Hide header links in media query */
+    
     .header-right li a {
         display: none;
     }
@@ -351,7 +351,7 @@ button[type="submit"]:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold; /* Adjust font weight as needed */
+    font-weight: bold; 
     color: #b82222;
     font-size: 25px;
 }
@@ -360,7 +360,7 @@ button[type="submit"]:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold; /* Adjust font weight as needed */
+    font-weight: bold; 
     color:#b82222;
     font-size: 25px;
 }
@@ -369,7 +369,7 @@ button[type="submit"]:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold; /* Adjust font weight as needed */
+    font-weight: bold; 
     color:#b82222;
     font-size: 25px;
 }

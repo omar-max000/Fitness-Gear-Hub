@@ -20,8 +20,7 @@
                 <li><a href="#categories">CATEGORIES</a></li>
                 <li><a href="#products">SHOP</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <li><button id="signUpButton">SIGN UP</button></li>
-                <li><button id="signInButton">SIGN IN</button></li>
+                <li><button id="loginButton">LOGIN</button></li>
             </ul>
             
         </nav>
@@ -278,32 +277,26 @@
         <p>Copyright &copy; 2024 Fitness Gear Hub</p>
     </div>
 </footer>
-<div id="popup" class="popup">
+<div id="loginPopup" class="popup">
     <div class="popup-content">
-        <span class="close" onclick="closePopup()">&times;</span>
-        <h2>Sign Up / Sign In</h2>
-        <form id="signup-form" onsubmit="validateForm(event)">
+        <span class="close" onclick="closePopup('loginPopup')">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form" onsubmit="login(event)">
             <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="username" required>
             </div>
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility('login-password')"><i class="fas fa-eye"></i></span>
             </div>
-            <div class="form-group">
-                <label for="email">Password</label>
-                <input type="password" id="password" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            
             <button type="submit">Submit</button>
         </form>
     </div>
 </div>
+
+
 
 <script src="script.js"></script>
 </body>
