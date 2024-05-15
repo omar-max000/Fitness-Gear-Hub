@@ -21,6 +21,7 @@
                 <li><a href="#products">SHOP</a></li>
                 <li><a href="#contact">CONTACT</a></li>
                 <li><button id="loginButton">LOGIN</button></li>
+                <li><button id="SignUpButton" onclick="showSignup()">SIGN UP</button></li>
             </ul>
             
         </nav>
@@ -296,8 +297,25 @@
     </div>
 </div>
 
-
+<div id="signupPopup" class="popup" style="display: none;">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('signupPopup')">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signup-form" onsubmit="signup(event)">
+            <div class="form-group">
+                <label for="signup-name">Name:</label>
+                <input type="text" id="signup-name" name="signup-name" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="signup-password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
 
 <script src="script.js"></script>
+
 </body>
 </html>

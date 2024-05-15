@@ -108,3 +108,50 @@ function login(event) {
 }
 
 
+
+const signupButton = document.getElementById('SignUpButton');
+signupButton.addEventListener('click', signup);
+
+
+
+
+function showSignup() {
+    const signupPopup = document.getElementById('signupPopup');
+    signupPopup.style.display = 'block';
+}
+
+function closePopup(popupId) {
+    const popup = document.getElementById(popupId);
+    popup.style.display = 'none';
+}
+
+function signup(event) {
+    event.preventDefault();
+
+    const nameValue = document.getElementById('signup-name').value;
+    const passValue = document.getElementById('signup-password').value;
+
+    
+    if (!nameValue.trim() && !passValue.trim()) {
+        return; 
+    }
+
+    if (!nameValue || !passValue) {
+        alert('Please fill out all fields.');
+        return;
+    }
+
+    
+    if (users.some(user => user.username === nameValue)) {
+        alert('Username already exists. Please choose a different one.');
+        return;
+    }
+
+    
+    users.push({ username: nameValue, password: passValue });
+
+    alert('Account created successfully! You can now log in.');
+
+    
+    closePopup('signupPopup');
+}
