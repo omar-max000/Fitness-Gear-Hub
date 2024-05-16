@@ -20,8 +20,9 @@
                 <li><a href="#categories">CATEGORIES</a></li>
                 <li><a href="#products">SHOP</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <li><button id="loginButton">LOGIN</button></li>
-                <li><button id="SignUpButton" onclick="showSignup()">SIGN UP</button></li>
+                <li><button id="loginButton">Login</button></li>
+                <li><button id="SignUpButton" onclick="showSignup()">SignUp</button></li>
+                <li><button id="showUsersButton">ShowUsers</button></li>
             </ul>
             
         </nav>
@@ -32,7 +33,8 @@
     <div class="container">
         <h1>There Is Always, A Next Level To Reach...</h1><br><br><br>
         <p>I Help You Get Double The EXP!</p><br><br><br>
-        <button id="bcmMember">BECOME A MEMBER</button>
+        <button id="bcmMember" onclick="showSignup()">BECOME A MEMBER</button> <br> <br> <br> <br>
+        <button id="logoutButton" onclick="logout()">LogOut</button>
     </div>
 </section>
 
@@ -97,19 +99,19 @@
                 <img src="images/threadmill.png" alt="Gym Product 1">
                 <h3>Threadmill</h3>
                 <p>$99.99</p>
-                <button>Add to Cart</button>
+                <button onclick="redirectToPayment()">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="images/benchpress.png" alt="Gym Product 2">
                 <h3>Bench Press</h3>
                 <p>$59.99</p>
-                <button>Add to Cart</button>
+                <button onclick="redirectToPayment()">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="images/resistanceband.png" alt="Gym Product 3">
                 <h3>Resistance Bands</h3>
                 <p>$2.99</p>
-                <button>Add to Cart</button>
+                <button onclick="redirectToPayment()">Add to Cart</button>
             </div>
         </div>
     </section>
@@ -121,19 +123,19 @@
                 <img src="images/boxinggloves.png" alt="Boxing Product 1">
                 <h3>EverLast Gloves</h3>
                 <p>$39.99</p>
-                <button>Add to Cart</button>
+                <button onclick="redirectToPayment()">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="images/boxingshoes.png" alt="Boxing Product 2">
                 <h3>Boxing Shoes</h3>
                 <p>$49.99</p>
-                <button>Add to Cart</button>
+                <button onclick="redirectToPayment()">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="images/spartanbag.png" alt="Boxing Product 3">
                 <h3>SPARTAN FIGHTER Heavy Bag</h3>
                 <p>$99.99</p>
-                <button>Add to Cart</button>
+                <button onclick="redirectToPayment()">Add to Cart</button>
             </div>
         </div>
     </section>
@@ -145,19 +147,19 @@
                 <img src="images/proteinpowder.png" alt="Supplement Product 1">
                 <h3>Protein Powder</h3>
                 <p>$69.99</p>
-                <button>Add to Cart</button>
+                <button onclick="redirectToPayment()">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="images/preworkout.png" alt="Supplement Product 2">
                 <h3>Pre Workout Mix</h3>
                 <p>$39.99</p>
-                <button>Add to Cart</button>
+                <button onclick="redirectToPayment()">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="images/testosil.png" alt="Supplement Product 3">
                 <h3>TESTOSIL Gold</h3>
                 <p>$29.99</p>
-                <button>Add to Cart</button>
+                <button onclick="redirectToPayment()">Add to Cart</button>
             </div>
         </div>
     </section>
@@ -169,19 +171,19 @@
                 <img src="images/yogacourse1.png" alt="Yoga Program 1">
                 <h3>Beginner Yoga Program</h3>
                 <p>$29.99</p>
-                <button>Add to Cart</button>
+                <button onclick="redirectToPayment()">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="images/yogaicon2.png" alt="Yoga Program 2">
                 <h3>Intermediate Yoga Program</h3>
                 <p>$39.99</p>
-                <button>Add to Cart</button>
+                <button onclick="redirectToPayment()">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="images/yogaicon3.png" alt="Yoga Program 3">
                 <h3>Advanced Yoga Program</h3>
                 <p>$49.99</p>
-                <button>Add to Cart</button>
+                <button onclick="redirectToPayment()">Add to Cart</button>
             </div>
         </div>
     </section>
@@ -193,19 +195,19 @@
                 <img src="images/bodycourse1.png" alt="Bodybuilding Program 1">
                 <h3>Beginner BodyBuilding Program</h3>
                 <p>$49.99</p>
-                <button>Add to Cart</button>
+                <button onclick="redirectToPayment()">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="images/bodycourse2.png" alt="Bodybuilding Program 2">
                 <h3>Intermediate BodyBuilding Program</h3>
                 <p>$59.99</p>
-                <button>Add to Cart</button>
+                <button onclick="redirectToPayment()">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="images/bodycourse3.png" alt="Bodybuilding Program 3">
                 <h3>Advanced BodyBuilding Program</h3>
                 <p>$69.99</p>
-                <button>Add to Cart</button>
+                <button onclick="redirectToPayment()">Add to Cart</button>
             </div>
         </div>
     </section>
@@ -275,7 +277,7 @@
     </div>
     <br><br>
     <div class="container">
-        <p>Copyright &copy; 2024 Fitness Gear Hub</p>
+        <p>All Rights Reserved &copy; 2024 Fitness Gear Hub</p>
     </div>
 </footer>
 <div id="loginPopup" class="popup">

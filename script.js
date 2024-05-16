@@ -1,5 +1,23 @@
-
 const headerIcons = document.querySelectorAll('.header-right ul li a');
+const showUsersButton = document.getElementById('showUsersButton');
+const logoutButton = document.getElementById('logoutButton');
+
+const aboutLink = document.querySelector('a[href="#about"]');
+const shopLink = document.querySelector('a[href="#products"]');
+const contactLink = document.querySelector('a[href="#contact"]');
+
+const loginButton = document.getElementById('loginButton');
+const loginPopup = document.getElementById('loginPopup');
+const closeButton = document.querySelector('.close');
+
+const signupButton = document.getElementById('SignUpButton');
+
+const users = [
+    { username: 'omar', password: 'omartaji666' },
+    { username: 'taji', password: 'omartaji777' },
+    { username: 'roblox', password: 'roblox888' }
+];
+
 
 headerIcons.forEach(icon => {
     icon.addEventListener('click', function() {
@@ -15,9 +33,6 @@ headerIcons.forEach(icon => {
 });
 
 
-const aboutLink = document.querySelector('a[href="#about"]');
-const shopLink = document.querySelector('a[href="#products"]');
-const contactLink = document.querySelector('a[href="#contact"]');
 
 
 
@@ -41,9 +56,6 @@ function openInNewTab(url) {
         alert('Please allow popups for this website');
     }
 }
-const loginButton = document.getElementById('loginButton');
-const loginPopup = document.getElementById('loginPopup');
-const closeButton = document.querySelector('.close');
 
 loginButton.addEventListener('click', function () {
     openPopup();
@@ -62,11 +74,7 @@ function closePopup() {
 }
 
 
-const users = [
-    { username: 'omar', password: 'omartaji666' },
-    { username: 'taji', password: 'omartaji777' },
-    { username: 'roblox', password: 'roblox888' }
-];
+
 
 
 
@@ -109,7 +117,7 @@ function login(event) {
 
 
 
-const signupButton = document.getElementById('SignUpButton');
+
 signupButton.addEventListener('click', signup);
 
 
@@ -154,4 +162,24 @@ function signup(event) {
 
     
     closePopup('signupPopup');
+}
+
+showUsersButton.addEventListener('click', function() {
+    console.log('Users:', users);
+});
+
+
+function logout() {
+    let lengt = users.length;
+    if (lengt > 0) {
+        users.splice(lengt - 1, 1);
+        console.log("User logged out, updated users:", users);
+    } else {
+        alert("no users to log out");
+    }
+}
+
+
+function redirectToPayment() {
+    window.open('payment.html', '_blank');
 }
